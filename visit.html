@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit — LATTE CLUB</title>
+  <meta name="description" content="Find us in Mumbai. Three locations, open daily. Walk-ins welcome.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav class="nav" role="navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">LATTE CLUB</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-drawer" role="dialog" aria-modal="true">
+    <button class="nav-close" aria-label="Close menu">×</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="brewers.html">Brewers & Roasts</a></li>
+      <li><a href="visit.html">Visit</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p class="nav-info">Mumbai · Open Daily 7AM–9PM</p>
+  </div>
+
+  <main id="main">
+
+    <section class="page-hero section-cream">
+      <div class="container container-narrow text-center">
+        <h1 class="page-title">Find us. Daily.</h1>
+        <p class="page-subtitle">Three locations across Mumbai. Walk-ins welcome. Reservations for groups of 6+.</p>
+      </div>
+    </section>
+
+    <!-- Locations -->
+    <section class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Our Locations</h2>
+        <div class="location-grid">
+          <article class="location-card">
+            <h3>Bandra West</h3>
+            <p class="location-address">Shop 12, Hill Road<br>Bandra West, Mumbai 400050</p>
+            <p class="location-hours"><strong>Hours:</strong> Mon–Sun, 7AM–9PM</p>
+            <p class="location-contact"><a href="tel:+912212345671">+91 22 1234 5671</a></p>
+            <button class="btn btn-small btn-secondary reserve-btn">Reserve Table</button>
+          </article>
+          <article class="location-card">
+            <h3>Colaba</h3>
+            <p class="location-address">45 Mandlik Road<br>Colaba, Mumbai 400001</p>
+            <p class="location-hours"><strong>Hours:</strong> Mon–Sun, 7AM–10PM</p>
+            <p class="location-contact"><a href="tel:+912212345672">+91 22 1234 5672</a></p>
+            <button class="btn btn-small btn-secondary reserve-btn">Reserve Table</button>
+          </article>
+          <article class="location-card">
+            <h3>Powai</h3>
+            <p class="location-address">Central Avenue Mall<br>Hiranandani, Powai 400076</p>
+            <p class="location-hours"><strong>Hours:</strong> Mon–Sun, 8AM–10PM</p>
+            <p class="location-contact"><a href="tel:+912212345673">+91 22 1234 5673</a></p>
+            <button class="btn btn-small btn-secondary reserve-btn">Reserve Table</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- What to Expect -->
+    <section class="section section-cream">
+      <div class="container container-narrow text-center">
+        <h2 class="section-title">What to Expect</h2>
+        <p class="section-text">Free Wi-Fi. Plenty of outlets. Natural light. Good music. Comfortable seating. And of course, exceptional coffee.</p>
+        <div class="amenities-list">
+          <span class="amenity">Wi-Fi</span>
+          <span class="amenity">Outlets</span>
+          <span class="amenity">Outdoor Seating</span>
+          <span class="amenity">Wheelchair Accessible</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transit Info -->
+    <section class="section section-dark">
+      <div class="container container-narrow">
+        <h2 class="section-title">Getting Here</h2>
+        <div class="transit-info">
+          <div class="transit-item">
+            <h3>Metro</h3>
+            <p>Bandra: 5 min walk from Bandra Station (Western Line)<br>Colaba: 10 min walk from Churchgate Station</p>
+          </div>
+          <div class="transit-item">
+            <h3>Parking</h3>
+            <p>Street parking available. Paid parking at Central Avenue Mall (Powai location).</p>
+          </div>
+          <div class="transit-item">
+            <h3>Bike Racks</h3>
+            <p>Bicycle parking available at all locations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Reservation Modal (Hidden by default) -->
+  <div class="modal" id="reserveModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <h2 id="modalTitle">Reserve a Table</h2>
+      <form class="reserve-form" id="reserveForm">
+        <label for="reserve-name">Name *</label>
+        <input type="text" id="reserve-name" name="name" required>
+        
+        <label for="reserve-email">Email *</label>
+        <input type="email" id="reserve-email" name="email" required>
+        
+        <label for="reserve-phone">Phone *</label>
+        <input type="tel" id="reserve-phone" name="phone" required>
+        
+        <label for="reserve-date">Date *</label>
+        <input type="date" id="reserve-date" name="date" required>
+        
+        <label for="reserve-time">Time *</label>
+        <input type="time" id="reserve-time" name="time" required>
+        
+        <label for="reserve-guests">Number of Guests *</label>
+        <input type="number" id="reserve-guests" name="guests" min="6" max="20" required>
+        
+        <button type="submit" class="btn btn-primary">Submit Reservation</button>
+      </form>
+      <p class="form-note">For parties under 6, walk-ins are always welcome.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Visit</h3>
+          <p>Shop 12, Hill Road<br>Bandra West, Mumbai 400050</p>
+          <p>Open Daily: 7AM – 9PM</p>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <p><a href="mailto:hello@latteclub.com">hello@latteclub.com</a></p>
+          <p><a href="tel:+912212345678">+91 22 1234 5678</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>More</h3>
+          <p><a href="contact.html">Wholesale Inquiries</a></p>
+          <p><a href="contact.html">Private Events</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 LATTE CLUB. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

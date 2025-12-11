@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — LATTE CLUB</title>
+  <meta name="description" content="Get in touch. Wholesale inquiries. Private events. Collaborations welcome.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav class="nav" role="navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">LATTE CLUB</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-drawer" role="dialog" aria-modal="true">
+    <button class="nav-close" aria-label="Close menu">×</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="brewers.html">Brewers & Roasts</a></li>
+      <li><a href="visit.html">Visit</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p class="nav-info">Mumbai · Open Daily 7AM–9PM</p>
+  </div>
+
+  <main id="main">
+
+    <section class="page-hero section-dark">
+      <div class="container container-narrow text-center">
+        <h1 class="page-title">Let's collaborate</h1>
+        <p class="page-subtitle">Whether you're a café owner, event planner, or coffee enthusiast, we'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- General Contact Form -->
+    <section class="section section-cream">
+      <div class="container container-narrow">
+        <h2 class="section-subtitle">General Inquiries</h2>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="contact-name">Name *</label>
+            <input type="text" id="contact-name" name="name" required aria-required="true">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-email">Email *</label>
+            <input type="email" id="contact-email" name="email" required aria-required="true">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-subject">Subject *</label>
+            <input type="text" id="contact-subject" name="subject" required aria-required="true">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-message">Message *</label>
+            <textarea id="contact-message" name="message" rows="6" required aria-required="true"></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Wholesale Section -->
+    <section class="section section-dark">
+      <div class="container container-narrow">
+        <h2 class="section-title">Wholesale Partners</h2>
+        <p class="section-text">Stock LATTE CLUB beans at your café, restaurant, or retail space. We offer competitive wholesale pricing, training, and support.</p>
+        <ul class="wholesale-list">
+          <li>Minimum order: 10kg per origin</li>
+          <li>Free delivery within Mumbai</li>
+          <li>Custom roast profiles available</li>
+          <li>Barista training included</li>
+        </ul>
+        <a href="mailto:wholesale@latteclub.com" class="btn btn-secondary" style="margin-top: 2rem;">Request Wholesale Info</a>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="section section-cream">
+      <div class="container container-narrow">
+        <h2 class="section-title">Private Events</h2>
+        <p class="section-text">Host your gathering at LATTE CLUB. We accommodate corporate events, workshops, tastings, and private celebrations.</p>
+        <form class="contact-form" id="eventsForm">
+          <div class="form-group">
+            <label for="event-name">Name *</label>
+            <input type="text" id="event-name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="event-email">Email *</label>
+            <input type="email" id="event-email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="event-type">Event Type *</label>
+            <select id="event-type" name="event-type" required>
+              <option value="">Select event type</option>
+              <option value="corporate">Corporate Event</option>
+              <option value="workshop">Workshop / Tasting</option>
+              <option value="private">Private Party</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="event-guests">Expected Guests *</label>
+            <input type="number" id="event-guests" name="guests" min="10" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="event-date">Preferred Date *</label>
+            <input type="date" id="event-date" name="date" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="event-details">Event Details</label>
+            <textarea id="event-details" name="details" rows="4"></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit Event Inquiry</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Direct Contact Info -->
+    <section class="section section-dark">
+      <div class="container container-narrow text-center">
+        <h2 class="section-title">Direct Contact</h2>
+        <p class="section-text"><strong>General:</strong> <a href="mailto:hello@latteclub.com">hello@latteclub.com</a></p>
+        <p class="section-text"><strong>Wholesale:</strong> <a href="mailto:wholesale@latteclub.com">wholesale@latteclub.com</a></p>
+        <p class="section-text"><strong>Events:</strong> <a href="mailto:events@latteclub.com">events@latteclub.com</a></p>
+        <p class="section-text"><strong>Phone:</strong> <a href="tel:+912212345678">+91 22 1234 5678</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Visit</h3>
+          <p>Shop 12, Hill Road<br>Bandra West, Mumbai 400050</p>
+          <p>Open Daily: 7AM – 9PM</p>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <p><a href="mailto:hello@latteclub.com">hello@latteclub.com</a></p>
+          <p><a href="tel:+912212345678">+91 22 1234 5678</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>More</h3>
+          <p><a href="contact.html">Wholesale Inquiries</a></p>
+          <p><a href="contact.html">Private Events</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 LATTE CLUB. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

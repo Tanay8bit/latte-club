@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — LATTE CLUB</title>
+  <meta name="description" content="Espresso, milk drinks, cold brew, and light bites. Handcrafted daily.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav class="nav" role="navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">LATTE CLUB</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-drawer" role="dialog" aria-modal="true">
+    <button class="nav-close" aria-label="Close menu">×</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="brewers.html">Brewers & Roasts</a></li>
+      <li><a href="visit.html">Visit</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p class="nav-info">Mumbai · Open Daily 7AM–9PM</p>
+  </div>
+
+  <main id="main">
+
+    <!-- Menu Hero -->
+    <section class="page-hero section-dark">
+      <div class="container container-narrow text-center">
+        <h1 class="page-title">Daily Rituals</h1>
+        <p class="page-subtitle">Thoughtfully sourced. Carefully crafted.</p>
+      </div>
+    </section>
+
+    <!-- Menu Filter Tabs -->
+    <nav class="menu-tabs" aria-label="Menu categories">
+      <div class="container">
+        <ul class="tabs-list" role="tablist">
+          <li role="presentation"><button class="tab active" role="tab" aria-selected="true" data-category="espresso">Espresso</button></li>
+          <li role="presentation"><button class="tab" role="tab" aria-selected="false" data-category="milk">Milk Drinks</button></li>
+          <li role="presentation"><button class="tab" role="tab" aria-selected="false" data-category="cold">Cold Brew</button></li>
+          <li role="presentation"><button class="tab" role="tab" aria-selected="false" data-category="bites">Light Bites</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Menu Categories -->
+    <section class="section section-cream" id="espresso">
+      <div class="container">
+        <h2 class="section-subtitle">Espresso</h2>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <img src="assets/images/placeholder-espresso.jpg" alt="Single espresso shot">
+            <div class="menu-details">
+              <div class="menu-header">
+                <h3>Single Shot</h3>
+                <span class="price">₹120</span>
+              </div>
+              <p>18g dose. 25-second extraction. Bold, balanced, beautiful.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="assets/images/placeholder-espresso.jpg" alt="Double espresso shot">
+            <div class="menu-details">
+              <div class="menu-header">
+                <h3>Double Shot</h3>
+                <span class="price">₹180</span>
+              </div>
+              <p>36g dose. Full-bodied intensity. Our most popular pour.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="assets/images/placeholder-espresso.jpg" alt="Americano">
+            <div class="menu-details">
+              <div class="menu-header">
+                <h3>Americano</h3>
+                <span class="price">₹160</span>
+              </div>
+              <p>Double shot with hot water. Clean, smooth, sessionable.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream" id="milk">
+      <div class="container">
+        <h2 class="section-subtitle">Milk Drinks</h2>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <img src="assets/images/placeholder-latte.jpg" alt="Signature latte">
+            <div class="menu-details">
+              <div class="menu-header">
+                <h3>Signature Latte</h3>
+                <span class="price">₹220</span>
+              </div>
+              <p>House blend espresso. Oat milk. Latte art included.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="assets/images/placeholder-latte.jpg" alt="Cappuccino">
+            <div class="menu-details">
+              <div class="menu-header">
+                <h3>Cappuccino</h3>
+                <span class="price">₹200</span>
+              </div>
+              <p>Equal parts espresso, steamed milk, and foam. Traditional.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="assets/images/placeholder-latte.jpg" alt="Flat white">
+            <div class="menu-details">
+              <div class="menu-header">
+                <h3>Flat White</h3>
+                <span class="price">₹210</span>
+              </div>
+              <p>Velvety microfoam. Double ristretto. Stronger milk ratio.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream" id="cold">
+      <div class="container">
+        <h2 class="section-subtitle">Cold Brew</h2>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <img src="assets/images/placeholder-coldbrew.jpg" alt="Classic cold brew">
+            <div class="menu-details">
+              <div class="menu-header">
+                <h3>Classic Cold Brew</h3>
+                <span class="price">₹240</span>
+              </div>
+              <p>24-hour steep. Smooth, low-acid, naturally sweet.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="assets/images/placeholder-coldbrew.jpg" alt="Nitro cold brew">
+            <div class="menu-details">
+              <div class="menu-header">
+                <h3>Nitro Cold Brew</h3>
+                <span class="price">₹280</span>
+              </div>
+              <p>Infused with nitrogen. Creamy texture. No dairy needed.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="assets/images/placeholder-coldbrew.jpg" alt="Iced latte">
+            <div class="menu-details">
+              <div class="menu-header">
+                <h3>Iced Latte</h3>
+                <span class="price">₹230</span>
+              </div>
+              <p>Espresso over ice. Your choice of milk. Refreshing.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream" id="bites">
+      <div class="container">
+        <h2 class="section-subtitle">Light Bites</h2>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <img src="assets/images/placeholder-pastry.jpg" alt="Almond croissant">
+            <div class="menu-details">
+              <div class="menu-header">
+                <h3>Almond Croissant</h3>
+                <span class="price">₹180</span>
+              </div>
+              <p>Buttery, flaky, filled with almond cream. Baked daily.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="assets/images/placeholder-pastry.jpg" alt="Avocado toast">
+            <div class="menu-details">
+              <div class="menu-header">
+                <h3>Avocado Toast</h3>
+                <span class="price">₹260</span>
+              </div>
+              <p>Sourdough. Smashed avocado. Chili flakes. Lemon.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="assets/images/placeholder-pastry.jpg" alt="Banana bread">
+            <div class="menu-details">
+              <div class="menu-header">
+                <h3>Banana Bread</h3>
+                <span class="price">₹140</span>
+              </div>
+              <p>House-made. Moist, spiced, topped with walnuts.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customization Note -->
+    <section class="section section-dark">
+      <div class="container container-narrow text-center">
+        <h2 class="section-title">Make It Yours</h2>
+        <p class="section-text">Oat, almond, coconut, soy — your choice. Extra shot, decaf, sugar-free syrups available. Just ask.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Visit</h3>
+          <p>Shop 12, Hill Road<br>Bandra West, Mumbai 400050</p>
+          <p>Open Daily: 7AM – 9PM</p>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <p><a href="mailto:hello@latteclub.com">hello@latteclub.com</a></p>
+          <p><a href="tel:+912212345678">+91 22 1234 5678</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>More</h3>
+          <p><a href="contact.html">Wholesale Inquiries</a></p>
+          <p><a href="contact.html">Private Events</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 LATTE CLUB. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
